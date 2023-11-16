@@ -9,6 +9,6 @@ function adicionarFilme() {
   for (let i = 0; i < listaFilmes.length; i++) task.src = `${listaFilmes[i]}`;
 
   list.appendChild(task);
-  var constFilme = document.getElementById("filme");
-  constFilme.value = "";
+  var inputFilme = document.getElementById("filme");
+  inputFilme.value = "";
 }
