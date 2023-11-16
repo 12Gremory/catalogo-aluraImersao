@@ -6,9 +6,12 @@ function adicionarFilme() {
   if (isImage(filme)) {
     listaFilmes.push(filme);
     const list = document.getElementById("listaFilmes");
-    const task = document.createElement("img");
+    const task = document.createElement("a");
+    task.href = "www.google.com";
+    task.target = "_blank";
 
-    for (let i = 0; i < listaFilmes.length; i++) task.src = `${listaFilmes[i]}`;
+    for (let i = 0; i < listaFilmes.length; i++)
+      task.innerHTML = `<img src="${listaFilmes[i]}">`;
 
     list.appendChild(task);
     inputFilme.value = "";
